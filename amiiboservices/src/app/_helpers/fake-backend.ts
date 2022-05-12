@@ -1,11 +1,18 @@
 ﻿import { Injectable } from '@angular/core';
-import { HttpRequest, HttpResponse, HttpHandler, HttpEvent, HttpInterceptor, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpRequest, HttpResponse, HttpHandler, HttpEvent, HttpInterceptor, HTTP_INTERCEPTORS, HttpClient } from '@angular/common/http';
 import { Observable, of, throwError } from 'rxjs';
 import { delay, materialize, dematerialize } from 'rxjs/operators';
+
 
 // array in local storage for registered users
 const usersKey = 'angular-10-registration-login-example-users';
 let users = JSON.parse(localStorage.getItem(usersKey)) || [];
+
+//array in local storage for registered cards, currently depricated
+const cardsKey = 'angular-10-cards'
+let cards = JSON.parse(localStorage.getItem(cardsKey)) || [];
+
+
 
 @Injectable()
 export class FakeBackendInterceptor implements HttpInterceptor {
@@ -28,6 +35,11 @@ export class FakeBackendInterceptor implements HttpInterceptor {
                     return updateUser();
                 case url.match(/\/users\/\d+$/) && method === 'DELETE':
                     return deleteUser();
+                //implement following routes
+                // case url.endsWith('/cards') && method === 'GET':
+                //     return getCards();
+                //     case url.match(/\/cards\/\d+$/) && method === 'GET':
+                //       return getCardById();
                 default:
                     // pass through any requests not handled above
                     return next.handle(request);
@@ -42,7 +54,7 @@ export class FakeBackendInterceptor implements HttpInterceptor {
             if (!user) return error('Email or password is incorrect');
             return ok({
                 ...basicDetails(user),
-                token: 'fake-jwt-token'
+                token: 'fake-jwt-token' //generate auth eventually
             })
         }
 
@@ -55,13 +67,18 @@ export class FakeBackendInterceptor implements HttpInterceptor {
             }
 
             user.id = users.length ? Math.max(...users.map(x => x.id)) + 1 : 1;
-            users.push(user);
+            user.userType = 0
+            // users.push(user);
             localStorage.setItem(usersKey, JSON.stringify(users));
+
             return ok();
         }
 
+        //change !isLoggedIn to check if userType == 1
         function getUsers() {
             if (!isLoggedIn()) return unauthorized();
+            // console.log("localStorage:")
+            // console.log(localStorage)
             return ok(users.map(x => basicDetails(x)));
         }
 

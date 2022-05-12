@@ -1,0 +1,20 @@
+
+.cardsList {
+  display: flex;
+  // flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  ion-card {
+    padding: 1rem;
+    width: 12rem;
+    height: auto;
+
+    ion-card-title {
+      margin-bottom: 1;
+    }
+    p {
+      font-size: 0.8rem;
+      margin-bottom: 0;
+    }
+  }
+}

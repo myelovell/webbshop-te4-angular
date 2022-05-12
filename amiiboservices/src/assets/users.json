@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "username": "admin",
+    "password": "adminadmin",
+    "email": "admin@admin.com",
+    "token": "fake-jwt-token",
+    "userType": 1
+  },
+  {
+    "id": 2,
+    "username": "user",
+    "password": "useruser",
+    "email": "user@user.com",
+    "token": "fake-jwt-token",
+    "userType": 0
+  }
+]
