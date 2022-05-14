@@ -4,6 +4,7 @@
   <div class="cardsList">
 
     <ion-card *ngFor="let card of cards" routerLink="{{card.id}}">
+      <img src="../assets/amiibo-cards/{{card.tag}}.png" alt="">
       <ion-card-title>
         {{card.tag}} - {{card.name}}
       </ion-card-title>

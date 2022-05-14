@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "tag": 1,
+    "tag": "001",
     "name": "Isabelle",
     "cardType": "Special",
     "birthday": "December 20th",
@@ -14,7 +14,7 @@
   },
   {
     "id": 2,
-    "tag": 2,
+    "tag": "002",
     "name": "Tom Nook",
     "cardType": "Special",
     "birthday": "May 30th",
@@ -27,7 +27,7 @@
   },
   {
     "id": 3,
-    "tag": 3,
+    "tag": "003",
     "name": "DJ KK",
     "cardType": "Special",
     "birthday": "August 23rd",
@@ -40,7 +40,7 @@
   },
   {
     "id": 4,
-    "tag": 4,
+    "tag": "004",
     "name": "Sable",
     "cardType": "Special",
     "birthday": "November 22nd",
@@ -53,7 +53,7 @@
   },
   {
     "id": 5,
-    "tag": 5,
+    "tag": "005",
     "name": "Kappn",
     "cardType": "Special",
     "birthday": "July 12th",
@@ -66,7 +66,7 @@
   },
   {
     "id": 6,
-    "tag": 6,
+    "tag": "006",
     "name": "Resetti",
     "cardType": "Special",
     "birthday": "April 6th",
@@ -79,7 +79,7 @@
   },
   {
     "id": 7,
-    "tag": 7,
+    "tag": "007",
     "name": "Joan",
     "cardType": "Special",
     "birthday": "January 8th",
@@ -92,7 +92,7 @@
   },
   {
     "id": 8,
-    "tag": 8,
+    "tag": "008",
     "name": "Timmy",
     "cardType": "Special",
     "birthday": "June 7th",
@@ -105,7 +105,7 @@
   },
   {
     "id": 9,
-    "tag": 9,
+    "tag": "009",
     "name": "Digby",
     "cardType": "Special",
     "birthday": "December 20th",
@@ -118,7 +118,7 @@
   },
   {
     "id": 10,
-    "tag": 10,
+    "tag": "010",
     "name": "Pascal",
     "cardType": "Special",
     "birthday": "July 19th",
@@ -131,7 +131,7 @@
   },
   {
     "id": 11,
-    "tag": 11,
+    "tag": "011",
     "name": "Harriet",
     "cardType": "Special",
     "birthday": "January 31th",
@@ -144,7 +144,7 @@
   },
   {
     "id": 12,
-    "tag": 12,
+    "tag": "012",
     "name": "Redd",
     "cardType": "Special",
     "birthday": "October 18th",
@@ -157,7 +157,7 @@
   },
   {
     "id": 13,
-    "tag": 13,
+    "tag": "013",
     "name": "Saharah",
     "cardType": "Special",
     "birthday": "November 10th",
@@ -170,7 +170,7 @@
   },
   {
     "id": 14,
-    "tag": 14,
+    "tag": "014",
     "name": "Luna",
     "cardType": "Special",
     "birthday": "February 29th",
@@ -183,7 +183,7 @@
   },
   {
     "id": 15,
-    "tag": 15,
+    "tag": "015",
     "name": "Tortimer",
     "cardType": "Special",
     "birthday": "December 31st",
@@ -196,7 +196,7 @@
   },
   {
     "id": 16,
-    "tag": 16,
+    "tag": "016",
     "name": "Lyle",
     "cardType": "Special",
     "birthday": "June 6th",
@@ -209,7 +209,7 @@
   },
   {
     "id": 17,
-    "tag": 17,
+    "tag": "017",
     "name": "Lottie",
     "cardType": "Special",
     "birthday": "September 12th",
@@ -222,7 +222,7 @@
   },
   {
     "id": 18,
-    "tag": 18,
+    "tag": "018",
     "name": "Bob",
     "cardType": "Rare",
     "birthday": "January 1st",
@@ -235,7 +235,7 @@
   },
   {
     "id": 19,
-    "tag": 19,
+    "tag": "019",
     "name": "Fauna",
     "cardType": "Rare",
     "birthday": "March 26th",
@@ -248,7 +248,7 @@
   },
   {
     "id": 20,
-    "tag": 20,
+    "tag": "020",
     "name": "Curt",
     "cardType": "Common",
     "birthday": "July 1st",
@@ -261,7 +261,7 @@
   },
   {
     "id": 21,
-    "tag": 21,
+    "tag": "021",
     "name": "Portia",
     "cardType": "Common",
     "birthday": "October 25th",
@@ -274,7 +274,7 @@
   },
   {
     "id": 22,
-    "tag": 22,
+    "tag": "022",
     "name": "Leonardo",
     "cardType": "Common",
     "birthday": "May 15th",
@@ -287,7 +287,7 @@
   },
   {
     "id": 23,
-    "tag": 23,
+    "tag": "023",
     "name": "Cheri",
     "cardType": "Common",
     "birthday": "March 17th",
@@ -300,7 +300,7 @@
   },
   {
     "id": 24,
-    "tag": 24,
+    "tag": "024",
     "name": "Kyle",
     "cardType": "Common",
     "birthday": "December 6th",
@@ -313,7 +313,7 @@
   },
   {
     "id": 25,
-    "tag": 25,
+    "tag": "025",
     "name": "Al",
     "cardType": "Common",
     "birthday": "October 18th",
@@ -326,7 +326,7 @@
   },
   {
     "id": 26,
-    "tag": 26,
+    "tag": "026",
     "name": "Renée",
     "cardType": "Common",
     "birthday": "May 28th",
@@ -339,7 +339,7 @@
   },
   {
     "id": 27,
-    "tag": 27,
+    "tag": "027",
     "name": "Lopez",
     "cardType": "Rare",
     "birthday": "August 20th",
@@ -352,7 +352,7 @@
   },
   {
     "id": 28,
-    "tag": 28,
+    "tag": "028",
     "name": "Jambette",
     "cardType": "Common",
     "birthday": "October 27th",
@@ -365,7 +365,7 @@
   },
   {
     "id": 29,
-    "tag": 29,
+    "tag": "029",
     "name": "Rasher",
     "cardType": "Common",
     "birthday": "April 7th",
@@ -378,7 +378,7 @@
   },
   {
     "id": 30,
-    "tag": 30,
+    "tag": "030",
     "name": "Tiffany",
     "cardType": "Common",
     "birthday": "January 9th",
@@ -391,7 +391,7 @@
   },
   {
     "id": 31,
-    "tag": 31,
+    "tag": "031",
     "name": "Sheldon",
     "cardType": "Common",
     "birthday": "February 26th",
@@ -404,7 +404,7 @@
   },
   {
     "id": 32,
-    "tag": 32,
+    "tag": "032",
     "name": "Bluebear",
     "cardType": "Rare",
     "birthday": "June 24th",
@@ -417,7 +417,7 @@
   },
   {
     "id": 33,
-    "tag": 33,
+    "tag": "033",
     "name": "Bill",
     "cardType": "Common",
     "birthday": "February 1st",
@@ -430,7 +430,7 @@
   },
   {
     "id": 34,
-    "tag": 34,
+    "tag": "034",
     "name": "Kiki",
     "cardType": "Rare",
     "birthday": "October 8th",
@@ -443,7 +443,7 @@
   },
   {
     "id": 35,
-    "tag": 35,
+    "tag": "035",
     "name": "Deli",
     "cardType": "Common",
     "birthday": "May 24th",
@@ -456,7 +456,7 @@
   },
   {
     "id": 36,
-    "tag": 36,
+    "tag": "036",
     "name": "Alli",
     "cardType": "Common",
     "birthday": "November 8th",
@@ -469,7 +469,7 @@
   },
   {
     "id": 37,
-    "tag": 37,
+    "tag": "037",
     "name": "Kabuki",
     "cardType": "Rare",
     "birthday": "November 29th",
@@ -482,7 +482,7 @@
   },
   {
     "id": 38,
-    "tag": 38,
+    "tag": "038",
     "name": "Patty",
     "cardType": "Common",
     "birthday": "May 10th",
@@ -495,7 +495,7 @@
   },
   {
     "id": 39,
-    "tag": 39,
+    "tag": "039",
     "name": "Jitters",
     "cardType": "Common",
     "birthday": "February 2nd",
@@ -508,7 +508,7 @@
   },
   {
     "id": 40,
-    "tag": 40,
+    "tag": "040",
     "name": "Gigi",
     "cardType": "Common",
     "birthday": "August 11th",
@@ -521,7 +521,7 @@
   },
   {
     "id": 41,
-    "tag": 41,
+    "tag": "041",
     "name": "Quillson",
     "cardType": "Common",
     "birthday": "December 22nd",
@@ -534,7 +534,7 @@
   },
   {
     "id": 42,
-    "tag": 42,
+    "tag": "042",
     "name": "Marcie",
     "cardType": "Common",
     "birthday": "May 31st",
@@ -547,7 +547,7 @@
   },
   {
     "id": 43,
-    "tag": 43,
+    "tag": "043",
     "name": "Puck",
     "cardType": "Common",
     "birthday": "February 21st",
@@ -560,7 +560,7 @@
   },
   {
     "id": 44,
-    "tag": 44,
+    "tag": "044",
     "name": "Shari",
     "cardType": "Common",
     "birthday": "April 10th",
@@ -573,7 +573,7 @@
   },
   {
     "id": 45,
-    "tag": 45,
+    "tag": "045",
     "name": "Octavian",
     "cardType": "Rare",
     "birthday": "September 20th",
@@ -586,7 +586,7 @@
   },
   {
     "id": 46,
-    "tag": 46,
+    "tag": "046",
     "name": "Winnie",
     "cardType": "Common",
     "birthday": "January 31st",
@@ -599,7 +599,7 @@
   },
   {
     "id": 47,
-    "tag": 47,
+    "tag": "047",
     "name": "Knox",
     "cardType": "Common",
     "birthday": "November 23rd",
@@ -612,7 +612,7 @@
   },
   {
     "id": 48,
-    "tag": 48,
+    "tag": "048",
     "name": "Sterling",
     "cardType": "Common",
     "birthday": "December 11th",
@@ -625,7 +625,7 @@
   },
   {
     "id": 49,
-    "tag": 49,
+    "tag": "049",
     "name": "Bonbon",
     "cardType": "Common",
     "birthday": "March 3rd",
@@ -638,7 +638,7 @@
   },
   {
     "id": 50,
-    "tag": 50,
+    "tag": "050",
     "name": "Punchy",
     "cardType": "Common",
     "birthday": "April 11th",
@@ -651,7 +651,7 @@
   },
   {
     "id": 51,
-    "tag": 51,
+    "tag": "051",
     "name": "Opal",
     "cardType": "Common",
     "birthday": "January 20th",
@@ -664,7 +664,7 @@
   },
   {
     "id": 52,
-    "tag": 52,
+    "tag": "052",
     "name": "Poppy",
     "cardType": "Rare",
     "birthday": "August 5th",
@@ -677,7 +677,7 @@
   },
   {
     "id": 53,
-    "tag": 53,
+    "tag": "053",
     "name": "Limberg",
     "cardType": "Common",
     "birthday": "October 17th",
@@ -690,7 +690,7 @@
   },
   {
     "id": 54,
-    "tag": 54,
+    "tag": "054",
     "name": "Deena",
     "cardType": "Common",
     "birthday": "June 27th",
@@ -703,7 +703,7 @@
   },
   {
     "id": 55,
-    "tag": 55,
+    "tag": "055",
     "name": "Snake",
     "cardType": "Common",
     "birthday": "November 3rd",
@@ -716,7 +716,7 @@
   },
   {
     "id": 56,
-    "tag": 56,
+    "tag": "056",
     "name": "Bangle",
     "cardType": "Common",
     "birthday": "August 27th",
@@ -729,7 +729,7 @@
   },
   {
     "id": 57,
-    "tag": 57,
+    "tag": "057",
     "name": "Phil",
     "cardType": "Common",
     "birthday": "November 27th",
@@ -742,7 +742,7 @@
   },
   {
     "id": 58,
-    "tag": 58,
+    "tag": "058",
     "name": "Monique",
     "cardType": "Common",
     "birthday": "September 30th",
@@ -755,7 +755,7 @@
   },
   {
     "id": 59,
-    "tag": 59,
+    "tag": "059",
     "name": "Nate",
     "cardType": "Common",
     "birthday": "August 16th",
@@ -768,7 +768,7 @@
   },
   {
     "id": 60,
-    "tag": 60,
+    "tag": "060",
     "name": "Samson",
     "cardType": "Common",
     "birthday": "July 5th",
@@ -781,7 +781,7 @@
   },
   {
     "id": 61,
-    "tag": 61,
+    "tag": "061",
     "name": "Tutu",
     "cardType": "Common",
     "birthday": "September 15th",
@@ -794,7 +794,7 @@
   },
   {
     "id": 62,
-    "tag": 62,
+    "tag": "062",
     "name": "T-Bone",
     "cardType": "Common",
     "birthday": "May 20th",
@@ -807,7 +807,7 @@
   },
   {
     "id": 63,
-    "tag": 63,
+    "tag": "063",
     "name": "Mint",
     "cardType": "Common",
     "birthday": "May 2nd",
@@ -820,7 +820,7 @@
   },
   {
     "id": 64,
-    "tag": 64,
+    "tag": "064",
     "name": "Pudge",
     "cardType": "Common",
     "birthday": "June 11st",
@@ -833,7 +833,7 @@
   },
   {
     "id": 65,
-    "tag": 65,
+    "tag": "065",
     "name": "Midge",
     "cardType": "Common",
     "birthday": "March 12th",
@@ -846,7 +846,7 @@
   },
   {
     "id": 66,
-    "tag": 66,
+    "tag": "066",
     "name": "Gruff",
     "cardType": "Common",
     "birthday": "August 29th",
@@ -859,7 +859,7 @@
   },
   {
     "id": 67,
-    "tag": 67,
+    "tag": "067",
     "name": "Flurry",
     "cardType": "Common",
     "birthday": "January 30th",
@@ -872,7 +872,7 @@
   },
   {
     "id": 68,
-    "tag": 68,
+    "tag": "068",
     "name": "Clyde",
     "cardType": "Common",
     "birthday": "May 1st",
@@ -885,7 +885,7 @@
   },
   {
     "id": 69,
-    "tag": 69,
+    "tag": "069",
     "name": "Bella",
     "cardType": "Common",
     "birthday": "December 28th",
@@ -898,7 +898,7 @@
   },
   {
     "id": 70,
-    "tag": 70,
+    "tag": "070",
     "name": "Biff",
     "cardType": "Common",
     "birthday": "March 29th",
@@ -911,7 +911,7 @@
   },
   {
     "id": 71,
-    "tag": 71,
+    "tag": "071",
     "name": "Yuka",
     "cardType": "Common",
     "birthday": "July 20th",
@@ -924,7 +924,7 @@
   },
   {
     "id": 72,
-    "tag": 72,
+    "tag": "072",
     "name": "Lionel",
     "cardType": "Common",
     "birthday": "July 29th",
@@ -937,7 +937,7 @@
   },
   {
     "id": 73,
-    "tag": 73,
+    "tag": "073",
     "name": "Flo",
     "cardType": "Common",
     "birthday": "September 2nd",
@@ -950,7 +950,7 @@
   },
   {
     "id": 74,
-    "tag": 74,
+    "tag": "074",
     "name": "Cobb",
     "cardType": "Common",
     "birthday": "October 7th",
@@ -963,7 +963,7 @@
   },
   {
     "id": 75,
-    "tag": 75,
+    "tag": "075",
     "name": "Amelia",
     "cardType": "Common",
     "birthday": "November 19th",
@@ -976,7 +976,7 @@
   },
   {
     "id": 76,
-    "tag": 76,
+    "tag": "076",
     "name": "Jeremiah",
     "cardType": "Common",
     "birthday": "July 8th",
@@ -989,7 +989,7 @@
   },
   {
     "id": 77,
-    "tag": 77,
+    "tag": "077",
     "name": "Cherry",
     "cardType": "Rare",
     "birthday": "May 11th",
@@ -1002,7 +1002,7 @@
   },
   {
     "id": 78,
-    "tag": 78,
+    "tag": "078",
     "name": "Roscoe",
     "cardType": "Common",
     "birthday": "June 16th",
@@ -1015,7 +1015,7 @@
   },
   {
     "id": 79,
-    "tag": 79,
+    "tag": "079",
     "name": "Truffles",
     "cardType": "Common",
     "birthday": "July 28th",
@@ -1028,7 +1028,7 @@
   },
   {
     "id": 80,
-    "tag": 80,
+    "tag": "080",
     "name": "Eugene",
     "cardType": "Common",
     "birthday": "October 26th",
@@ -1041,7 +1041,7 @@
   },
   {
     "id": 81,
-    "tag": 81,
+    "tag": "081",
     "name": "Eunice",
     "cardType": "Common",
     "birthday": "April 3rd",
@@ -1054,7 +1054,7 @@
   },
   {
     "id": 82,
-    "tag": 82,
+    "tag": "082",
     "name": "Goose",
     "cardType": "Common",
     "birthday": "October 4th",
@@ -1067,7 +1067,7 @@
   },
   {
     "id": 83,
-    "tag": 83,
+    "tag": "083",
     "name": "Annalisa",
     "cardType": "Common",
     "birthday": "February 6th",
@@ -1080,7 +1080,7 @@
   },
   {
     "id": 84,
-    "tag": 84,
+    "tag": "084",
     "name": "Benjamin",
     "cardType": "Rare",
     "birthday": "August 3rd",
@@ -1093,7 +1093,7 @@
   },
   {
     "id": 85,
-    "tag": 85,
+    "tag": "085",
     "name": "Pancetti",
     "cardType": "Common",
     "birthday": "November 14th",
@@ -1106,7 +1106,7 @@
   },
   {
     "id": 86,
-    "tag": 86,
+    "tag": "086",
     "name": "Chief",
     "cardType": "Common",
     "birthday": "December 19th",
@@ -1119,7 +1119,7 @@
   },
   {
     "id": 87,
-    "tag": 87,
+    "tag": "087",
     "name": "Bunnie",
     "cardType": "Common",
     "birthday": "May 9th",
@@ -1132,7 +1132,7 @@
   },
   {
     "id": 88,
-    "tag": 88,
+    "tag": "088",
     "name": "Clay",
     "cardType": "Common",
     "birthday": "October 19th",
@@ -1145,7 +1145,7 @@
   },
   {
     "id": 89,
-    "tag": 89,
+    "tag": "089",
     "name": "Diana",
     "cardType": "Rare",
     "birthday": "January 4th",
@@ -1158,7 +1158,7 @@
   },
   {
     "id": 90,
-    "tag": 90,
+    "tag": "090",
     "name": "Axel",
     "cardType": "Common",
     "birthday": "March 23rd",
@@ -1171,7 +1171,7 @@
   },
   {
     "id": 91,
-    "tag": 91,
+    "tag": "091",
     "name": "Muffy",
     "cardType": "Rare",
     "birthday": "February 14th",
@@ -1184,7 +1184,7 @@
   },
   {
     "id": 92,
-    "tag": 92,
+    "tag": "092",
     "name": "Henry",
     "cardType": "Common",
     "birthday": "September 21st",
@@ -1197,7 +1197,7 @@
   },
   {
     "id": 93,
-    "tag": 93,
+    "tag": "093",
     "name": "Bertha",
     "cardType": "Common",
     "birthday": "April 25th",
@@ -1210,7 +1210,7 @@
   },
   {
     "id": 94,
-    "tag": 94,
+    "tag": "094",
     "name": "Cyrano",
     "cardType": "Common",
     "birthday": "March 9th",
@@ -1223,7 +1223,7 @@
   },
   {
     "id": 95,
-    "tag": 95,
+    "tag": "095",
     "name": "Peanut",
     "cardType": "Common",
     "birthday": "June 8th",
@@ -1236,7 +1236,7 @@
   },
   {
     "id": 96,
-    "tag": 96,
+    "tag": "096",
     "name": "Cole",
     "cardType": "Common",
     "birthday": "August 10th",
@@ -1249,7 +1249,7 @@
   },
   {
     "id": 97,
-    "tag": 97,
+    "tag": "097",
     "name": "Willow",
     "cardType": "Common",
     "birthday": "November 26th",
@@ -1262,7 +1262,7 @@
   },
   {
     "id": 98,
-    "tag": 98,
+    "tag": "098",
     "name": "Roald",
     "cardType": "Common",
     "birthday": "January 5th",
@@ -1275,7 +1275,7 @@
   },
   {
     "id": 99,
-    "tag": 99,
+    "tag": "099",
     "name": "Molly",
     "cardType": "Rare",
     "birthday": "March 7th",

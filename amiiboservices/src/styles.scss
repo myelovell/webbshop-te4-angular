@@ -64,6 +64,13 @@ ion-header {
       padding: 1rem;
       width: 12rem;
       height: auto;
+      img {
+        align-items: center;
+        width: -webkit-fill-available;
+        padding: 0px;
+        overflow: hidden;
+
+      }
 
       ion-card-title {
         margin-bottom: 1;
