@@ -3,7 +3,9 @@ import { first } from 'rxjs/operators';
 
 import { AccountService } from '../_services';
 
-@Component({ templateUrl: 'list.component.html' })
+@Component({
+  templateUrl: 'list.component.html',
+  styleUrls: ['../../styles.scss'] })
 export class ListComponent implements OnInit {
     users = null;
 

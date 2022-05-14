@@ -1,17 +1,20 @@
-<h1>Cards:</h1>
-<a routerLink="add" class="btn btn-sm btn-success mb-2">Add Cards</a>
-<div class="cardsList">
+<div class="cards">
+  <ion-title size="large">Cards:</ion-title>
+  <!-- <a routerLink="add">Add Cards</a> -->
+  <div class="cardsList">
 
-  <ion-card *ngFor="let card of cards" routerLink="{{card.id}}">
-    <ion-card-title>
-      {{card.tag}} - {{card.name}}
-    </ion-card-title>
+    <ion-card *ngFor="let card of cards" routerLink="{{card.id}}">
+      <ion-card-title>
+        {{card.tag}} - {{card.name}}
+      </ion-card-title>
 
-    <p>Type: {{card.cardType}}</p>
-    <p>Price: ${{card.price}}</p>
+      <p>Type: {{card.cardType}}</p>
+      <p>Price: ${{card.price}}</p>
 
-    <!-- <a routerLink="{{card.id}}" class="btn btn-sm btn-primary mr-1">Info</a> -->
+      <!-- <a routerLink="{{card.id}}" class="btn btn-sm btn-primary mr-1">Info</a> -->
 
-  </ion-card>
+    </ion-card>
+
+  </div>
 
 </div>

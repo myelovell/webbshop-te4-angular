@@ -1,0 +1,100 @@
+/* You can add global styles to this file, and also import other style files */
+a { cursor: pointer }
+
+*{
+  // padding-inline: 20px;
+  margin: 0;
+}
+
+.app-container {
+    min-height: 320px;
+    overflow: hidden;
+}
+
+.btn-delete-user {
+    width: 40px;
+    text-align: center;
+    box-sizing: content-box;
+}
+
+//app.component
+.nav {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  padding: 0.5rem;
+  --background: lightgrey;
+  img {
+    height: 6vh;
+    width: auto;
+  }
+}
+
+ion-footer{
+
+  padding-inline: 0px;
+  ion-toolbar{
+    height: 15vh;
+    --background: lightgrey;
+    width: 100%;
+  }
+  position:relative;
+  bottom: 0px;
+}
+
+//home.component
+ion-header {
+  display: flex;
+  flex-direction: column;
+  padding: 5vw;
+  ion-title {
+    padding: 0;
+  }
+}
+
+//cards.component
+.cards{
+  padding: 5vw;
+  .cardsList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    ion-card {
+      margin: 2.5vw;
+      padding: 1rem;
+      width: 12rem;
+      height: auto;
+
+      ion-card-title {
+        margin-bottom: 1;
+      }
+      p {
+        font-size: 0.8rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+}
+
+//list.component
+.usersList{
+  padding: 5vw;
+  ion-title{
+    padding: 0px;
+  }
+}
+
+//about-us.component
+.about {
+  padding: 5vw;
+}
+
+//card.component
+.card {
+  padding: 5vw;
+  margin: 5rem;
+  ion-list {
+    padding: 5vw;
+  }
+}

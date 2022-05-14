@@ -7,11 +7,14 @@ import { LayoutComponent } from './layout.component';
 import { LoginComponent } from './login.component';
 import { RegisterComponent } from './register.component';
 
+import { IonicModule } from '@ionic/angular';
+
 @NgModule({
     imports: [
         CommonModule,
         ReactiveFormsModule,
-        AccountRoutingModule
+        AccountRoutingModule,
+        IonicModule.forRoot()
     ],
     declarations: [
         LayoutComponent,

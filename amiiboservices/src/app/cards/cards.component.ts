@@ -9,7 +9,7 @@ import { CardsService } from '../_services/cards.service';
 @Component({
   selector: 'app-cards',
   templateUrl: './cards.component.html',
-  styleUrls: ['./cards.component.scss'],
+  styleUrls: ['../../styles.scss'],
 })
 export class CardsComponent implements OnInit {
   localUrl = '../assets/cards.json'

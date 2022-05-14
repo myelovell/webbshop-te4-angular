@@ -3,7 +3,9 @@ import { Component } from '@angular/core';
 import { User } from '../_models';
 import { AccountService } from '../_services';
 
-@Component({ templateUrl: 'about-us.component.html' })
+@Component({
+  templateUrl: 'about-us.component.html',
+  styleUrls: ['../../styles.scss'] })
 export class AboutUsComponent {
     user: User;
 

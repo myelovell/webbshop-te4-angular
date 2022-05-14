@@ -1,20 +1,29 @@
-﻿<!-- nav -->
-<nav class="navbar navbar-expand navbar-dark bg-dark">
-    <div class="navbar-nav">
-        <a class="nav-item nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
-        <a class="nav-item nav-link" routerLink="/cards" routerLinkActive="active">Cards</a>
-        <a class="nav-item nav-link" routerLink="/users" routerLinkActive="active" *ngIf="user" >Users</a>
-        <a class="nav-item nav-link" routerLink="/aboutUs" routerLinkActive="active" >About Us</a>
-        <a class="nav-item nav-link" (click)="logout()" *ngIf="user">Logout</a>
+﻿<!-- ion-toolbar -->
+<ion-toolbar class="nav">
+  <img src="assets/images/Logotype.svg" alt="" slot="start">
+  <ion-title slot="start">Amiibo Services</ion-title>
+    <ion-buttons slot="end">
+        <ion-segment-button routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</ion-segment-button>
+        <ion-segment-button routerLink="/cards" routerLinkActive="active">Cards</ion-segment-button>
+        <ion-segment-button routerLink="/users" routerLinkActive="active" *ngIf="user" >Users</ion-segment-button>
+        <ion-segment-button routerLink="/aboutUs" routerLinkActive="active" >About Us</ion-segment-button>
+        <ion-segment-button (click)="logout()" *ngIf="user">Logout</ion-segment-button>
 
-        <a class="nav-item nav-link" routerLink="/account/login" *ngIf="!user">Log In</a>
-        <a class="nav-item nav-link" routerLink="/account/register"  *ngIf="!user">Register</a>
-    </div>
-</nav>
+        <ion-segment-button routerLink="/account/login" *ngIf="!user">Log In</ion-segment-button>
+        <ion-segment-button routerLink="/account/register"  *ngIf="!user">Register</ion-segment-button>
+    </ion-buttons>
+</ion-toolbar>
 
 <!-- main app container -->
-<div class="app-container" [ngClass]="{ 'bg-light': user }">
+<div class="app-container" style="min-height: 78vh;">
     <alert></alert>
     <router-outlet></router-outlet>
 </div>
+
+<ion-footer class="ion-no-border" collapse="fade">
+  <ion-toolbar>
+    <ion-title>Footer</ion-title>
+  </ion-toolbar>
+
+</ion-footer>
 

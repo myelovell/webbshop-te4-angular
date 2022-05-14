@@ -7,11 +7,14 @@ import { LayoutComponent } from './layout.component';
 import { ListComponent } from './list.component';
 import { AddEditComponent } from './add-edit.component';
 
+import { IonicModule } from '@ionic/angular'
+
 @NgModule({
     imports: [
         CommonModule,
         ReactiveFormsModule,
-        UsersRoutingModule
+        UsersRoutingModule,
+        IonicModule.forRoot()
     ],
     declarations: [
         LayoutComponent,

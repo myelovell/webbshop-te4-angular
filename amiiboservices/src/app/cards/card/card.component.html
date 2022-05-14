@@ -1,15 +1,35 @@
-<div>
-  <h1>{{card.tag}} - {{card.name}}</h1>
-  <p></p>
+<div class="card">
+  <ion-icon name="chevron-back-outline" routerLink="/cards" routerLinkActive="active"></ion-icon>
+  <ion-list>
+    <ion-title>{{card.tag}} - {{card.name}}</ion-title>
+    <ion-item>
+      <ion-label>Type: {{card.cardType}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Price: ${{card.price}}</ion-label>
+    </ion-item>
 
-  <p>Type: {{card.cardType}}</p>
-  <p>Price: ${{card.price}}</p>
-  ___________________________________
-  <p>Birthday: {{card.birthday}}</p>
-  <p>Animal Type: {{card.animalType}} </p>
-  <p>Gender: {{card.gender}}</p>
-  <p>Catchphrase: {{card.catchphrase}}</p>
-  <p>Personality: {{card.personality}}</p>
-  <p>Favourite Saying: {{card.favouriteSaying}}</p>
+    <ion-item>
+      <ion-label>Birthday: {{card.birthday}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Animal Type: {{card.animalType}} </ion-label>
+
+    </ion-item>
+    <ion-item>
+      <ion-label>Gender: {{card.gender}}</ion-label>
+
+    </ion-item>
+    <ion-item>
+      <ion-label>Catchphrase: {{card.catchphrase}}</ion-label>
+
+    </ion-item>
+    <ion-item>
+      <ion-label>Personality: {{card.personality}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Favourite Saying: {{card.favouriteSaying}}</ion-label>
+    </ion-item>
+  </ion-list>
 
 </div>

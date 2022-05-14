@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 
-@Component({ templateUrl: 'card.component.html' })
+@Component({
+  templateUrl: 'card.component.html',
+  styleUrls: ['../../../styles.scss'] })
 export class CardComponent implements OnInit {
 
   constructor(private route: ActivatedRoute){}

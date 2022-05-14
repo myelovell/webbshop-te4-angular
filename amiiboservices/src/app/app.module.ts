@@ -3,16 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
-import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+import { IonicModule } from '@ionic/angular';
 
 // used to create fake backend
 import { fakeBackendProvider } from './_helpers';
 
 import { AppRoutingModule } from './app-routing.module';
 import { JwtInterceptor, ErrorInterceptor } from './_helpers';
+
+//components
 import { AppComponent } from './app.component';
 import { AlertComponent } from './_components';
 import { HomeComponent } from './home';
+import { CardsComponent } from './cards/cards.component';
+import { CardComponent } from './cards/card/card.component';
+import { AboutUsComponent } from './_components/about-us.component';
 
 
 @NgModule({
@@ -27,6 +32,9 @@ import { HomeComponent } from './home';
         AppComponent,
         AlertComponent,
         HomeComponent,
+        CardsComponent,
+        CardComponent,
+        AboutUsComponent
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
