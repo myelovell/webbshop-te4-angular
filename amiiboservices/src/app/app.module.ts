@@ -15,8 +15,9 @@ import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 import { AppComponent } from './app.component';
 import { AlertComponent } from './_components';
 import { HomeComponent } from './home';
-import { CardsComponent } from './cards/cards.component';
-import { CardComponent } from './cards/card/card.component';
+// import { CardsModule } from './cards/cards.module';
+// import { CardsComponent } from './cards/cards.component';
+// import { CardComponent } from './cards/card/card.component';
 import { AboutUsComponent } from './_components/about-us.component';
 
 
@@ -32,8 +33,6 @@ import { AboutUsComponent } from './_components/about-us.component';
         AppComponent,
         AlertComponent,
         HomeComponent,
-        CardsComponent,
-        CardComponent,
         AboutUsComponent
     ],
     providers: [

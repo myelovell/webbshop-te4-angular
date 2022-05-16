@@ -24,9 +24,10 @@ export class CardsComponent implements OnInit {
 
   async ngOnInit() {
     this.getAll()
+    // this.getRandom()
   }
 
-  getAll() {
+  async getAll() {
     fetch(this.localUrl).then(res => res.json())
     .then(jsonData => {
       this.cards = jsonData;
@@ -35,7 +36,13 @@ export class CardsComponent implements OnInit {
     return this.cards
   }
 
-
+  // async getRandom() {
+  //   console.log("getRandom")
+  //   let cards = this.getAll()
+  //   console.log(cards)
+  //   console.log(cards[Math.floor(Math.random() *503)])
+  //   // return cards[Math.floor(Math.random() * 503)]
+  // }
 
 
 }

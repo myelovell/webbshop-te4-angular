@@ -1,7 +1,8 @@
 <div class="card">
-  <ion-icon name="chevron-back-outline" routerLink="/cards" routerLinkActive="active"></ion-icon>
+  <!-- <ion-icon name="chevron-back-outline" routerLink="/cards" routerLinkActive="active"></ion-icon> -->
+  <img src="../assets/amiibo-cards/{{card.tag}}.png" alt="amiibo card of {{card.name}}">
   <ion-list>
-    <ion-title>{{card.tag}} - {{card.name}}</ion-title>
+    <ion-title><span>{{card.tag}}</span> - {{card.name}}</ion-title>
     <ion-item>
       <ion-label>Type: {{card.cardType}}</ion-label>
     </ion-item>
@@ -20,14 +21,15 @@
       <ion-label>Gender: {{card.gender}}</ion-label>
 
     </ion-item>
-    <ion-item>
+    <ion-item *ngIf="card.catchphrase">
       <ion-label>Catchphrase: {{card.catchphrase}}</ion-label>
-
     </ion-item>
-    <ion-item>
+
+    <ion-item *ngIf="card.personality">
       <ion-label>Personality: {{card.personality}}</ion-label>
     </ion-item>
-    <ion-item>
+
+    <ion-item *ngIf="card.favouriteSaying">
       <ion-label>Favourite Saying: {{card.favouriteSaying}}</ion-label>
     </ion-item>
   </ion-list>

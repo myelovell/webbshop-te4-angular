@@ -1,9 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+//Fonts
+
+@font-face {
+  font-family: "Archivo";
+  src: url("./assets/Archivo/Archivo-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Archivo SemiBold";
+  src: url("./assets/Archivo/Archivo-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Archivo Italic";
+  src: url("./assets/Archivo/Archivo-Italic.ttf");
+}
+
+@font-face {
+  font-family: "Archivo Light";
+  src: url("./assets/Archivo/Archivo-Light.ttf");
+}
+@font-face {
+  font-family: "Archivo Thin";
+  src: url("./assets/Archivo/Archivo-Thin.ttf");
+}
+
+*, :root {
+  --cherry: #FF2500;
+  --peach: #FF6651;
+  --grape: #C742DD;
+  --apple: #74E14E;
+  --orange: #FF6E00;
+  --yellow: #FFBB0F;
+
+}
+
+
 a { cursor: pointer }
 
 *{
+  font-family: "Archivo Light";
   // padding-inline: 20px;
   margin: 0;
+  ion-title{
+    font-family: "Archivo SemiBold";
+  }
+  ion-text{
+    font-family: "Archivo Light";
+  }
+  p {
+    font-family: "Archivo Thin";
+  }
 }
 
 .app-container {
@@ -19,11 +68,12 @@ a { cursor: pointer }
 
 //app.component
 .nav {
+  * { color: white;}
   display: flex;
   justify-content: center;
   height: auto;
   padding: 0.5rem;
-  --background: lightgrey;
+  --background:var(--peach);
   img {
     height: 6vh;
     width: auto;
@@ -31,12 +81,25 @@ a { cursor: pointer }
 }
 
 ion-footer{
-
+  * { color: white;}
   padding-inline: 0px;
   ion-toolbar{
-    height: 15vh;
-    --background: lightgrey;
+    // padding-inline: 5vw;
+    // height: 15vh;
+    --background:var(--peach);
     width: 100%;
+    display: flex;
+    padding: 2vw 2vh;
+    .contactList {
+      display: flex;
+      flex-direction: column;
+      a {
+        text-decoration: none;
+        --background-hover: black;
+        color: inherit;
+      }
+
+    }
   }
   position:relative;
   bottom: 0px;
@@ -74,6 +137,9 @@ ion-header {
 
       ion-card-title {
         margin-bottom: 1;
+        span{
+          // background-color:var(--apple);
+        }
       }
       p {
         font-size: 0.8rem;
@@ -99,8 +165,19 @@ ion-header {
 
 //card.component
 .card {
+  display: flex;
+  flex-direction: row;
   padding: 5vw;
   margin: 5rem;
+  img {
+    height: 75vh;
+    object-fit: contain;
+  }
+  ion-title{
+    span{
+      // background-color:var(--apple);
+    }
+  }
   ion-list {
     padding: 5vw;
   }

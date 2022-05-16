@@ -7,6 +7,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CardsRoutingModule } from './cards-routing.module';
 import { LayoutComponent } from './layout.component';
 import { CardsComponent } from './cards.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { CardsComponent } from './cards.component';
   ],
   declarations: [
       LayoutComponent,
-      CardsComponent
+      CardsComponent,
+      CardComponent
   ]
 })
 export class CardsModule { }

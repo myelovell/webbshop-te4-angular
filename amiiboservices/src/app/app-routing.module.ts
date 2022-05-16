@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home';
-import { CardsComponent } from './cards/cards.component';
+// import { CardsComponent } from './cards/cards.component';
 import { AuthGuard } from './_helpers';
 import  {AboutUsComponent } from './_components/about-us.component'
 
