@@ -26,6 +26,10 @@
    npm install
    ```
 
+### Running the application
+   ```sh
+   ng serve
+   ```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
