@@ -1,5 +1,6 @@
 export class Card {
   id: string;
+  tag: string;
   name: string;
   cardType: string;
   birthday: string;

@@ -4,7 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home';
 // import { CardsComponent } from './cards/cards.component';
 import { AuthGuard } from './_helpers';
-import  {AboutUsComponent } from './_components/about-us.component'
+import { AboutUsComponent } from './_components/about-us.component'
+import { CartComponent } from './cart/cart.component';
 
 const accountModule = () => import('./account/account.module').then(x => x.AccountModule);
 const usersModule = () => import('./users/users.module').then(x => x.UsersModule);
@@ -17,6 +18,7 @@ const routes: Routes = [
     { path: 'account', loadChildren: accountModule },
     { path: 'cards', loadChildren: cardsModule},
     { path: 'aboutUs', component: AboutUsComponent},
+    { path: 'cart', component: CartComponent, canActivate: [AuthGuard]},
 
     // otherwise redirect to home
     { path: '**', redirectTo: '' }

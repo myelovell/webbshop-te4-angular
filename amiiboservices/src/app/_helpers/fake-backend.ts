@@ -9,10 +9,11 @@ const usersKey = 'angular-10-registration-login-example-users';
 let users = JSON.parse(localStorage.getItem(usersKey)) || [];
 
 //array in local storage for registered cards, currently depricated
-const cardsKey = 'angular-10-cards'
-let cards = JSON.parse(localStorage.getItem(cardsKey)) || [];
+// const cardsKey = 'angular-10-cards'
+// let cards = JSON.parse(localStorage.getItem(cardsKey)) || [];
 
-
+// const cartKey = 'angular-10-cart'
+// let cart: Array<Object> = JSON.parse(localStorage.getItem(cartKey)) || [];
 
 @Injectable()
 export class FakeBackendInterceptor implements HttpInterceptor {
@@ -68,7 +69,7 @@ export class FakeBackendInterceptor implements HttpInterceptor {
 
             user.id = users.length ? Math.max(...users.map(x => x.id)) + 1 : 1;
             user.userType = 0
-            // users.push(user);
+            users.push(user);
             localStorage.setItem(usersKey, JSON.stringify(users));
 
             return ok();

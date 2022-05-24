@@ -118,6 +118,14 @@ ion-header {
 //cards.component
 .cards{
   padding: 5vw;
+  .filterList{
+    ion-item{
+      img{
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
   .cardsList {
     display: flex;
     justify-content: center;

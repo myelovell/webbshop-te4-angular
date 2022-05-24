@@ -19,7 +19,7 @@ import { HomeComponent } from './home';
 // import { CardsComponent } from './cards/cards.component';
 // import { CardComponent } from './cards/card/card.component';
 import { AboutUsComponent } from './_components/about-us.component';
-
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
     imports: [
@@ -33,7 +33,8 @@ import { AboutUsComponent } from './_components/about-us.component';
         AppComponent,
         AlertComponent,
         HomeComponent,
-        AboutUsComponent
+        AboutUsComponent,
+        CartComponent
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },

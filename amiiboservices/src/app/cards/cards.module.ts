@@ -8,6 +8,8 @@ import { CardsRoutingModule } from './cards-routing.module';
 import { LayoutComponent } from './layout.component';
 import { CardsComponent } from './cards.component';
 import { CardComponent } from './card/card.component';
+import { CartComponent } from '../cart/cart.component';
+// import { CartComponent } from '../cart/cart.component';
 
 @NgModule({
   imports: [
@@ -19,7 +21,8 @@ import { CardComponent } from './card/card.component';
   declarations: [
       LayoutComponent,
       CardsComponent,
-      CardComponent
+      CardComponent,
+
   ]
 })
 export class CardsModule { }

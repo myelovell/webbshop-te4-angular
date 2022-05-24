@@ -32,6 +32,8 @@
     <ion-item *ngIf="card.favouriteSaying">
       <ion-label>Favourite Saying: {{card.favouriteSaying}}</ion-label>
     </ion-item>
+    <ion-icon name="add-circle" (click)="addItem(card)"></ion-icon>
+    <ion-icon name="remove-circle" (click)="removeItem(card)"></ion-icon>
   </ion-list>
 
 </div>

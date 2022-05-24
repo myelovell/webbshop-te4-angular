@@ -11,6 +11,12 @@
 
         <ion-segment-button routerLink="/account/login" *ngIf="!user">Log In</ion-segment-button>
         <ion-segment-button routerLink="/account/register"  *ngIf="!user">Register</ion-segment-button>
+
+        <ion-segment-button routerLink="/cart" *ngIf="user">
+          {{total}}
+          <ion-icon name="cart"></ion-icon>
+          Cart
+        </ion-segment-button>
     </ion-buttons>
 </ion-toolbar>
 
