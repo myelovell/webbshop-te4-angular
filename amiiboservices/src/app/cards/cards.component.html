@@ -1,106 +1,316 @@
 <div class="cards">
   <ion-title size="large">Cards:</ion-title>
   <!-- <a routerLink="add">Add Cards</a> -->
-  <ion-list class="filterList">
-    <div>
-      <ion-item (click)="filter(cardType[0])">Common</ion-item>
-      <ion-item (click)="filter(cardType[1])">Rare</ion-item>
-      <ion-item (click)="filter(cardType[2])">Special</ion-item>
-    </div>
-
-    <div>
-      <ion-item (click)="filter(gender[0])">Male</ion-item>
-      <ion-item (click)="filter(gender[1])">Female</ion-item>
-    </div>
-
-    <div>
-      <ion-item (click)="filter(animalType[0])"><img href="../../assets/animal-icons/Alligator.png">Alligator</ion-item>
-      <ion-item (click)="filter(animalType[1])"><img href="../../assets/animal-icons/Anteater.png">Anteater</ion-item>
-      <ion-item (click)="filter(animalType[2])">Axolotl</ion-item>
-      <ion-item (click)="filter(animalType[3])"><img href="../../assets/animal-icons/Bear.png">Bear</ion-item>
-      <ion-item (click)="filter(animalType[4])"><img href="../../assets/animal-icons/Bear cub.png">Bear cub</ion-item>
-      <ion-item (click)="filter(animalType[5])">Beaver</ion-item>
-      <ion-item (click)="filter(animalType[6])"><img href="../../assets/animal-icons/Bird.png">Bird</ion-item>
-      <ion-item (click)="filter(animalType[7])">Boar</ion-item>
-      <ion-item (click)="filter(animalType[8])"><img href="../../assets/animal-icons/Bull.png">Bull</ion-item>
-      <ion-item (click)="filter(animalType[9])">Camel</ion-item>
-      <ion-item (click)="filter(animalType[10])"><img href="../../assets/animal-icons/Cat.png">Cat</ion-item>
-      <ion-item (click)="filter(animalType[11])">Chameleon</ion-item>
-      <ion-item (click)="filter(animalType[12])"><img href="../../assets/animal-icons/Chicken.png">Chicken</ion-item>
-      <ion-item (click)="filter(animalType[13])"><img href="../../assets/animal-icons/Bull.png">Cow</ion-item>
-      <ion-item (click)="filter(animalType[14])"><img href="../../assets/animal-icons/Deer.png">Deer</ion-item>
-      <ion-item (click)="filter(animalType[15])">Dodo</ion-item>
-      <ion-item (click)="filter(animalType[16])"><img href="../../assets/animal-icons/Dog.png">Dog</ion-item>
-      <ion-item (click)="filter(animalType[17])"><img href="../../assets/animal-icons/Duck.png">Duck</ion-item>
-      <ion-item (click)="filter(animalType[18])"><img href="../../assets/animal-icons/Eagle.png">Eagle</ion-item>
-      <ion-item (click)="filter(animalType[19])"><img href="../../assets/animal-icons/Elephant.png">Elephant</ion-item>
-      <ion-item (click)="filter(animalType[20])">Fox</ion-item>
-      <ion-item (click)="filter(animalType[21])"><img href="../../assets/animal-icons/Frog.png">Frog</ion-item>
-      <ion-item (click)="filter(animalType[22])">Giraffe</ion-item>
-      <ion-item (click)="filter(animalType[23])"><img href="../../assets/animal-icons/Goat.png">Goat</ion-item>
-      <ion-item (click)="filter(animalType[24])"><img href="../../assets/animal-icons/Gorilla.png">Gorilla</ion-item>
-      <ion-item (click)="filter(animalType[25])"><img href="../../assets/animal-icons/Hamster.png">Hamster</ion-item>
-      <ion-item (click)="filter(animalType[26])">Hedgehog</ion-item>
-      <ion-item (click)="filter(animalType[27])"><img href="../../assets/animal-icons/Hippo.png">Hippo</ion-item>
-      <ion-item (click)="filter(animalType[28])"><img href="../../assets/animal-icons/Horse.png">Horse</ion-item>
-      <ion-item (click)="filter(animalType[29])"><img href="../../assets/animal-icons/Kangaroo.png">Kangaroo</ion-item>
-      <ion-item (click)="filter(animalType[30])">Kappa</ion-item>
-      <ion-item (click)="filter(animalType[31])"><img href="../../assets/animal-icons/Koala.png">Koala</ion-item>
-      <ion-item (click)="filter(animalType[32])"><img href="../../assets/animal-icons/Lion.png">Lion</ion-item>
-      <ion-item (click)="filter(animalType[33])">Manatee</ion-item>
-      <ion-item (click)="filter(animalType[34])">Mole</ion-item>
-      <ion-item (click)="filter(animalType[35])"><img href="../../assets/animal-icons/Monkey.png">Monkey</ion-item>
-      <ion-item (click)="filter(animalType[36])"><img href="../../assets/animal-icons/Mouse.png">Mouse</ion-item>
-      <ion-item (click)="filter(animalType[37])"><img href="../../assets/animal-icons/Octopus.png">Octopus</ion-item>
-      <ion-item (click)="filter(animalType[38])"><img href="../../assets/animal-icons/Ostrich.png">Ostrich</ion-item>
-      <ion-item (click)="filter(animalType[39])">Otter</ion-item>
-      <ion-item (click)="filter(animalType[40])">Owl</ion-item>
-      <ion-item (click)="filter(animalType[41])">Panther</ion-item>
-      <ion-item (click)="filter(animalType[42])">Peacock</ion-item>
-      <ion-item (click)="filter(animalType[43])">Pelican</ion-item>
-      <ion-item (click)="filter(animalType[44])"><img href="../../assets/animal-icons/Penguin.png">Penguin</ion-item>
-      <ion-item (click)="filter(animalType[45])"><img href="../../assets/animal-icons/Pig.png">Pig</ion-item>
-      <ion-item (click)="filter(animalType[46])">Pigeon</ion-item>
-      <ion-item (click)="filter(animalType[47])"><img href="../../assets/animal-icons/Rabbit.png">Rabbit</ion-item>
-      <ion-item (click)="filter(animalType[48])">Racoon</ion-item>
-      <ion-item (click)="filter(animalType[49])">Raindeer</ion-item>
-      <ion-item (click)="filter(animalType[50])"><img href="../../assets/animal-icons/Rhinoceros.png">Rhinoceros</ion-item>
-      <ion-item (click)="filter(animalType[51])">Sea lion</ion-item>
-      <ion-item (click)="filter(animalType[52])">Seagull</ion-item>
-      <ion-item (click)="filter(animalType[53])"><img href="../../assets/animal-icons/Sheep.png">Sheep</ion-item>
-      <ion-item (click)="filter(animalType[54])">Skunk</ion-item>
-      <ion-item (click)="filter(animalType[55])">Sloth</ion-item>
-      <ion-item (click)="filter(animalType[56])">Specter</ion-item>
-      <ion-item (click)="filter(animalType[57])"><img href="../../assets/animal-icons/Squirrel.png">Squirrel</ion-item>
-      <ion-item (click)="filter(animalType[58])">Tapir</ion-item>
-      <ion-item (click)="filter(animalType[59])"><img href="../../assets/animal-icons/Tiger.png">Tiger</ion-item>
-      <ion-item (click)="filter(animalType[60])">Tortoise</ion-item>
-      <ion-item (click)="filter(animalType[61])">Turkey</ion-item>
-      <ion-item (click)="filter(animalType[62])">Walrus</ion-item>
-      <ion-item (click)="filter(animalType[63])"><img href="../../assets/animal-icons/Wolf.png">Wolf</ion-item>
-
-
-    </div>
-
-
-
-  </ion-list>
-
-  <div class="cardsList">
-
-    <ion-card *ngFor="let card of cards">
-      <div  routerLink="{{card.id}}">
-        <img src="../assets/amiibo-cards/{{card.tag}}.png" alt="amiibo card of {{card.name}}">
-        <ion-card-title>
-          <span>{{card.tag}}</span> - {{card.name}}
-        </ion-card-title>
-
-        <p>Type: {{card.cardType}}</p>
-        <p>Price: ${{card.price}}</p>
+  <div class="listContainer">
+    <ion-list class="filterList">
+      <div>
+        <ion-item (click)="filterByCardType(cardType[0])">
+          <ion-label>Common</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByCardType(cardType[1])">
+          <ion-label>Rare</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByCardType(cardType[2])">
+          <ion-label>Special</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
       </div>
 
-      <ion-icon name="add-circle" (click)="addItem(card)"></ion-icon>
-    </ion-card>
+      <div>
+        <ion-item (click)="filterByGender(gender[0])">
+          <ion-label>Male</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByGender(gender[1])">
+          <ion-label>Female</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+      </div>
+
+      <div>
+        <!-- <ion-item (click)="filterByAnimalType(animalType[2])">Axolotl</ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[5])">Beaver</ion-item>
+        <ion-item (click)="filterByAnimalTypeByAnimalType(animalType[7])">Boar</ion-item>
+        <ion-item (click)="filterByAnimalTypeByAnimalType(animalType[9])">Camel</ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[11])">Chameleon</ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[15])">Dodo</ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[20])">Fox</ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[22])">Giraffe</ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[26])">Hedgehog</ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[30])">Kappa</ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[33])">Manatee</ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[34])">Mole</ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[39])">Otter</ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[40])">Owl</ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[41])">Panther</ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[42])">Peacock</ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[43])">Pelican</ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[46])">Pigeon</ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[48])">Racoon</ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[49])">Raindeer</ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[51])">Sea lion</ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[52])">Seagull</ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[54])">Skunk</ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[55])">Sloth</ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[56])">Specter</ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[58])">Tapir</ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[60])">Tortoise</ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[61])">Turkey</ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[62])">Walrus</ion-item> -->
+        <ion-item (click)="filterByAnimalType(animalType[0])">
+          <img src="../../assets/animal-icons/Alligator.png">
+          <ion-label>Alligator</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[1])">
+          <img src="../../assets/animal-icons/Anteater.png">
+          <ion-label>Anteater</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[3])">
+          <img src="../../assets/animal-icons/Bear.png">
+          <ion-label>Bear</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[4])">
+          <img src="../../assets/animal-icons/Bear cub.png">
+          <ion-label>Bear cub</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[6])">
+          <img src="../../assets/animal-icons/Bird.png">
+          <ion-label>Bird</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[8])">
+          <img src="../../assets/animal-icons/Bull.png">
+          <ion-label>Bull</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[10])">
+          <img src="../../assets/animal-icons/Cat.png">
+          <ion-label>Cat</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[12])">
+          <img src="../../assets/animal-icons/Chicken.png">
+          <ion-label>Chicken</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[13])">
+          <img src="../../assets/animal-icons/Bull.png">
+          <ion-label>Cow</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[14])">
+          <img src="../../assets/animal-icons/Deer.png">
+          <ion-label>Deer</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[16])">
+          <img src="../../assets/animal-icons/Dog.png">
+          <ion-label>Dog</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[17])">
+          <img src="../../assets/animal-icons/Duck.png">
+          <ion-label>Duck</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[18])">
+          <img src="../../assets/animal-icons/Eagle.png">
+          <ion-label>Eagle</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[19])">
+          <img src="../../assets/animal-icons/Elephant.png">
+          <ion-label>Elephant</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[21])">
+          <img src="../../assets/animal-icons/Frog.png">
+          <ion-label>Frog</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[23])">
+          <img src="../../assets/animal-icons/Goat.png">
+          <ion-label>Goat</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[24])">
+          <img src="../../assets/animal-icons/Gorilla.png">
+          <ion-label>Gorilla</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[25])">
+          <img src="../../assets/animal-icons/Hamster.png">
+          <ion-label>Hamster</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[27])">
+          <img src="../../assets/animal-icons/Hippo.png">
+          <ion-label>Hippo</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[28])">
+          <img src="../../assets/animal-icons/Horse.png">
+          <ion-label>Horse</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[29])">
+          <img src="../../assets/animal-icons/Kangaroo.png">
+          <ion-label>Kangaroo</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[31])">
+          <img src="../../assets/animal-icons/Koala.png">
+          <ion-label>Koala</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[32])">
+          <img src="../../assets/animal-icons/Lion.png">
+          <ion-label>Lion</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[35])">
+          <img src="../../assets/animal-icons/Monkey.png">
+          <ion-label>Monkey</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[36])">
+          <img src="../../assets/animal-icons/Mouse.png">
+          <ion-label>Mouse</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[37])">
+          <img src="../../assets/animal-icons/Octopus.png">
+          <ion-label>Octopus</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[38])">
+          <img src="../../assets/animal-icons/Ostrich.png">
+          <ion-label>Ostrich</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[44])">
+          <img src="../../assets/animal-icons/Penguin.png">
+          <ion-label>Penguin</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[45])">
+          <img src="../../assets/animal-icons/Pig.png">
+          <ion-label>Pig</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[47])">
+          <img src="../../assets/animal-icons/Rabbit.png">
+          <ion-label>Rabbit</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[50])">
+          <img src="../../assets/animal-icons/Rhinoceros.png">
+          <ion-label>Rhinoceros</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[53])">
+          <img src="../../assets/animal-icons/Sheep.png">
+          <ion-label>Sheep</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[57])">
+          <img src="../../assets/animal-icons/Squirrel.png">
+          <ion-label>Squirrel</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[59])">
+          <img src="../../assets/animal-icons/Tiger.png">
+          <ion-label>Tiger</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByAnimalType(animalType[63])">
+          <img src="../../assets/animal-icons/Wolf.png">
+          <ion-label>Wolf</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+      </div>
+
+      <div>
+        <ion-item (click)="filterByPersonality(personality[0])">
+          <ion-label>Cranky</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByPersonality(personality[1])">
+          <ion-label>Jock</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByPersonality(personality[2])">
+          <ion-label>Lazy</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByPersonality(personality[3])">
+          <ion-label>Normal</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByPersonality(personality[4])">
+          <ion-label>Peppy</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByPersonality(personality[5])">
+          <ion-label>Sisterly</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByPersonality(personality[6])">
+          <ion-label>Smug</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+        <ion-item (click)="filterByPersonality(personality[7])">
+          <ion-label>Snooty</ion-label>
+          <ion-note slot="end" color="secondary">99</ion-note>
+        </ion-item>
+      </div>
+
+
+
+    </ion-list>
+
+    <div class="cardsList">
+      <ng-container *ngIf="filter">
+
+
+        <ion-card  *ngFor="let card of tempCards" class="normalFilter">
+          <div  routerLink="{{card.id}}">
+            <img src="../assets/amiibo-cards/{{card.tag}}.png" alt="amiibo card of {{card.name}}">
+            <ion-card-title>
+              <span>{{card.tag}}</span> - {{card.name}}
+            </ion-card-title>
+
+            <p>Type: {{card.cardType}}</p>
+            <p>Price: ${{card.price}}</p>
+          </div>
+
+          <ion-icon name="bag-add-outline" (click)="addItem(card)"></ion-icon>
+        </ion-card>
+
+      </ng-container>
+      <ng-container *ngIf="!filter">
+        <ion-card  *ngFor="let card of cards">
+          <div  routerLink="{{card.id}}">
+            <img src="../assets/amiibo-cards/{{card.tag}}.png" alt="amiibo card of {{card.name}}">
+            <ion-card-title>
+              <span>{{card.tag}}</span> - {{card.name}}
+            </ion-card-title>
+
+            <p>Type: {{card.cardType}}</p>
+            <p>Price: ${{card.price}}</p>
+          </div>
+
+          <ion-icon name="bag-add-outline" (click)="addItem(card)"></ion-icon>
+        </ion-card>
+      </ng-container>
+
+    </div>
 
   </div>
 

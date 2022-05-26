@@ -17,13 +17,20 @@ import { CartService } from '../cart/cart.service'
 export class CardsComponent implements OnInit {
   localUrl = '../assets/cards.json'
   cards: any = [];
+  tempCards: any = []
+  filter: boolean = false;
   id: string;
   tag: string;
-
   name: string;
+  catchPhrase: string;
+  favouriteSaying: string;
+
   //filter after:
   cardType: Array<String> = ["Common", "Rare", "Special"]
   birthday: string;
+  personality: Array<String> = [
+    "Cranky", "Jock", "Lazy", "Normal", "Peppy", "Sisterly", "Smug", "Snooty"
+  ];
   animalType: Array<String> = [
     "Alligator", "Anteater", "Axolotl",
     "Bear", "Bear cub", "Beaver", "Bird", "Boar", "Bull",
@@ -43,9 +50,6 @@ export class CardsComponent implements OnInit {
     "Tapir", "Tiger", "Tortoise", "Turkey",
     "Walrus", "Wolf"];
   gender: Array<String> = ["Male", "Female"];
-  personality: string;
-  catchPhrase: string;
-  favouriteSaying: string;
 
   constructor(
     private router: Router,
@@ -60,7 +64,8 @@ export class CardsComponent implements OnInit {
     await this.cardsService.getAll()
     this.getAll()
     // this.cardsService.getRandom()
-    console.log(this.animalType.length)
+
+    // console.log(this.animalType.length)
   }
 
   async getAll() {
@@ -81,9 +86,51 @@ export class CardsComponent implements OnInit {
     // this.id = this.activatedRoute.snapshot.paramMap.get('id');
     // console.log(this.id)
   }
+  async getLength(type: any, group: string) {
 
-  async filter(type: any) {
-    console.log(`filter by: ${type}`)
+  }
+
+  async filterByCardType(type: any) {
+    this.filter = true
+    this.tempCards = this.cards.filter((a) => {
+      if (a.cardType == type) {
+        console.log(a.length)
+        return a;
+      }
+    })
+    console.log(this.tempCards)
+  }
+
+
+
+  async filterByAnimalType(type: any) {
+    this.filter = true
+    this.tempCards = this.cards.filter((a) => {
+      if (a.animalType == type) {
+        return a;
+      }
+    })
+    console.log(this.tempCards)
+  }
+
+  async filterByGender(type: any) {
+    this.filter = true
+    this.tempCards = this.cards.filter((a) => {
+      if (a.gender == type) {
+        return a;
+      }
+    })
+    console.log(this.tempCards)
+  }
+
+  async filterByPersonality(type: any) {
+    this.filter = true
+    this.tempCards = this.cards.filter((a) => {
+      if (a.personality == type) {
+        // console.log(this.tempCards.length)
+        return a;
+      }
+    })
   }
 
 

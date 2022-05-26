@@ -13,6 +13,7 @@ import { CartService } from './cart.service';
 export class CartComponent implements OnInit {
   // public cart: Array<Object> = [];
   public total = 0;
+  public totalPrice: number = 0
   public cart: any = []
   private cartKey = 'angular-10-cart'
 
@@ -28,7 +29,7 @@ export class CartComponent implements OnInit {
     console.log("ngOnInit C")
     this.syncCart()
     // this.getCart()
-    // this.getTotal()
+    this.getTotalPrice()
   }
 
   async getCart() {
@@ -56,6 +57,16 @@ export class CartComponent implements OnInit {
   async syncCart() {
     this.getCart();
     this.getTotal();
+  }
+
+  async getTotalPrice() {
+    for (let i = 0; i < this.cart.length; i++) {
+      // this.totalPrice += this.cart[i].price
+      this.totalPrice = this.totalPrice + parseInt(this.cart[i].price)
+      console.log(this.cart[i].price)
+    }
+    console.log(this.totalPrice)
+    return this.totalPrice
   }
 
 

@@ -1,25 +1,30 @@
 
-<div class="cards">
+<div class="cart">
   <ion-title size="large">Shopping Cart:</ion-title>
   <p>Items in cart: {{total}}</p>
   <!-- <a routerLink="add">Add Cards</a> -->
-  <div class="cardsList">
+  <ion-list class="cartList">
 
-    <ion-card *ngFor="let item of cart">
-      <div routerLink="{{item.id}}">
-        <img src="../assets/amiibo-cards/{{item.tag}}.png" alt="amiibo card of {{item.name}}">
-        <ion-card-title>
-          <span>{{item.tag}}</span> - {{item.name}}
-        </ion-card-title>
-
-        <p>Type: {{item.cardType}}</p>
-        <p>Price: ${{item.price}}</p>
+    <ion-item *ngFor="let item of cart" class="cartItem">
+      <div routerLink="{{item.id}}" style="display: flex;">
+        <img class="cartImg" src="../assets/amiibo-cards/{{item.tag}}.png" alt="amiibo card of {{item.name}}">
+        <div>
+          <div>
+            <ion-label>
+              <span>{{item.tag}}</span> - {{item.name}}
+            </ion-label>
+            <p>Type: {{item.cardType}}</p>
+            <p>Price: ${{item.price}}</p>
+          </div>
+          <div>
+            <ion-icon name="bag-add-outline" (click)="addItem(item)"></ion-icon>
+            <ion-icon name="trash-outline" (click)="removeItem(item)"></ion-icon>
+          </div>
+        </div>
       </div>
+    </ion-item>
+    <p>Total Cost: ${{totalPrice}}</p>
 
-      <ion-icon name="add-circle" (click)="addItem(item)"></ion-icon>
-      <ion-icon name="remove-circle" (click)="removeItem(item)"></ion-icon>
-    </ion-card>
-
-  </div>
+  </ion-list>
 
 </div>

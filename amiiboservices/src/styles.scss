@@ -66,6 +66,11 @@ a { cursor: pointer }
     box-sizing: content-box;
 }
 
+ion-icon{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 //app.component
 .nav {
   * { color: white;}
@@ -117,43 +122,58 @@ ion-header {
 
 //cards.component
 .cards{
+  // display: flex;
   padding: 5vw;
-  .filterList{
-    ion-item{
-      img{
-        width: 30px;
-        height: 30px;
+  .listContainer{
+    display: flex;
+    .filterList{
+      // justify-content: start;
+      flex-wrap: wrap;
+      div{
+        flex-direction: column;
+        ion-item{
+          --background: lightgrey ;
+          img{
+            width: 30px;
+            height: 30px;
+          }
+        }
+
       }
     }
-  }
-  .cardsList {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    ion-card {
-      margin: 2.5vw;
-      padding: 1rem;
-      width: 12rem;
-      height: auto;
-      img {
-        align-items: center;
-        width: -webkit-fill-available;
-        padding: 0px;
-        overflow: hidden;
+    .cardsList {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-self: baseline;
+      ion-card {
+        margin: 2.5vw;
+        padding: 1rem;
+        width: 12rem;
+        height: auto;
+        max-height: 21rem;
+        img {
+          align-items: center;
+          width: -webkit-fill-available;
+          padding: 0px;
+          overflow: hidden;
+          color: black;
 
-      }
+        }
 
-      ion-card-title {
-        margin-bottom: 1;
-        span{
-          // background-color:var(--apple);
+        ion-card-title {
+          margin-bottom: 1;
+          span{
+            // background-color:var(--apple);
+          }
+        }
+        p {
+          font-size: 0.8rem;
+          margin-bottom: 0;
         }
       }
-      p {
-        font-size: 0.8rem;
-        margin-bottom: 0;
-      }
     }
+
   }
 
 }
@@ -188,5 +208,31 @@ ion-header {
   }
   ion-list {
     padding: 5vw;
+  }
+}
+
+//cart.component
+.cart {
+  padding: 5vw;
+  .cartList{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .cartItem {
+      padding: 1rem;
+      // margin: 2.5vw;
+      width: 40rem;
+      height: auto;
+      max-height: 21rem;
+      .cartImg {
+          align-items: center;
+          // width: -webkit-fill-available;
+          height: 6rem;
+          padding: 0px;
+          overflow: hidden;
+          color: black;
+      }
+    }
   }
 }
