@@ -78,6 +78,7 @@ export class CartService implements OnInit{
   async syncCart() {
     this.getItems();
     this.getTotal();
+
     // window.location.reload();
     let currentUrl = this.router.url;
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;

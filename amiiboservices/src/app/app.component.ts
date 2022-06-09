@@ -17,6 +17,7 @@ export class AppComponent implements OnInit{
       private cartService: CartService
       ) {
         this.accountService.user.subscribe(x => this.user = x);
+        this.cartService.getTotal()
 
     }
     ngOnInit() {
